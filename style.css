@@ -15,3 +15,9 @@ Tags: two-columns, left-sidebar, custom-header, custom-menu, custom-logo, blog
 	background: blue;
 	height: 70px;
 }
+.brand {
+    background: green;
+}
+.second-column {
+    background: yellow;
+}

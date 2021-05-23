@@ -19,12 +19,21 @@
 
 	<div id="page" class="site">
 		<header>
-			<section class="search">Search</section>
+			<section class="search">
+				<div class="container">
+					Search
+				</div>
+			</section>
 			<section class="top-bar">
-				<div class="brand">Logo</div>
-				<div class="second-column">
-					<div class="account">Account</div>
-					<nav class="main-menu">Menu</nav>
+				<div class="container">
+					<div class="row">
+						<div class="brand col-3 col-sm-6">Logo</div>
+						<div class="second-column col-9 col-sm-6">
+							<div class="account">Account</div>
+							<nav class="main-menu"></nav>
+						</div>
+						
+					</div>
 				</div>
 			</section>
 		</header>
