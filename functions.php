@@ -12,3 +12,12 @@ function petoBear_lab_scripts() {
 	wp_enqueue_style('petoBear-lab-style', get_stylesheet_uri(), array(), filemtime( get_template_directory() . '/style.css' ), 'all');
 }
 add_action('wp_enqueue_scripts', 'petoBear_lab_scripts');
+
+function petoBear_lab_config(){
+	register_nav_menus(
+		array(
+			'petoBear_lab_main_menu' => 'PetoBear Lab Main Menu'
+		)
+	);
+}
+add_action('after_setup_theme', 'petoBear_lab_config', 0);
