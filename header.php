@@ -30,7 +30,13 @@
 						<div class="brand col-3 col-sm-6">Logo</div>
 						<div class="second-column col-9 col-sm-6">
 							<div class="account">Account</div>
-							<nav class="main-menu"></nav>
+							<nav class="main-menu">
+								<?php wp_nav_menu(
+									array(
+										'thme_location' => 'petoBear_lab_main_menu'
+									)
+								); ?>
+							</nav>
 						</div>
 						
 					</div>

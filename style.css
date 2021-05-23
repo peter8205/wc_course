@@ -21,3 +21,15 @@ Tags: two-columns, left-sidebar, custom-header, custom-menu, custom-logo, blog
 .second-column {
     background: yellow;
 }
+.main-menu ul {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 0;
+}
+
+.main-menu ul li {
+    display: inline;
+    margin: 0 5px 0 0;
+}
