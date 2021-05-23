@@ -11,6 +11,8 @@
  *
  * @package petoBear-lab
  */
+?>
+
 <?php get_header() ?>
 		<div class="content-area">
 			<main>
