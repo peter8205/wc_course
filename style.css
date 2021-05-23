@@ -33,3 +33,28 @@ Tags: two-columns, left-sidebar, custom-header, custom-menu, custom-logo, blog
     display: inline;
     margin: 0 5px 0 0;
 }
+
+.footer-menu ul, .footer-widgets ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer-menu ul li {
+    display: inline;
+    margin: 0 10px 0 0;
+}
+
+.footer-menu ul li:last-child {
+    margin: 0;
+}
+
+.main-menu ul li a {
+    color: #939393;
+    text-decoration: none;
+}
+
+.footer-menu ul li.current-menu-item a {
+    color: #ff9292;
+}
