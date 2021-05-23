@@ -7,11 +7,11 @@
  * @package PetoBear
  */
 ?>
-<footer>
+		<footer>
 			<section class="footer-widgets">Footer Widget</section>
 			<section class="copyright">Copyright</section>
 		</footer>
 	</div>
-	
+	<?php wp_footer() ?>
 </body>
 </html>
