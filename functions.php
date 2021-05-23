@@ -7,7 +7,7 @@
  * @package PetoBear Lab
  */
 
-function PetoBear_lab_scripts() {
-	wp_enqueue_style('PetoBear-lab-style', get_stylesheet_uri(), array(), '1.0', 'all');
+function petoBear_lab_scripts() {						//'1.0', 
+	wp_enqueue_style('petoBear-lab-style', get_stylesheet_uri(), array(), filemtime( get_template_directory() . '/style.css' ), 'all');
 }
-add_action('wp_enqueue_scripts', 'PetoBear_lab_scripts');
+add_action('wp_enqueue_scripts', 'petoBear_lab_scripts');
