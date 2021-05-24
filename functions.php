@@ -40,5 +40,6 @@ add_theme_support('woocommerce', array(
 
 	if ( ! isset( $content_width ) ) {
 	$content_width = 600;
+	}
 }
 add_action('after_setup_theme', 'petoBear_lab_config', 0);
