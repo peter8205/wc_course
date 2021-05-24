@@ -13,12 +13,32 @@ function petoBear_lab_scripts() {
 }
 add_action('wp_enqueue_scripts', 'petoBear_lab_scripts');
 
-function petoBear_lab__config(){
+function petoBear_lab_config(){
 	register_nav_menus(
 		array(
 			'petoBear_lab_main_menu' => 'PetoBear Lab Main Menu',
 			'petoBear_lab_footer_menu' => 'PetoBear Lab Footer Menu'
 		)
 	);
+add_theme_support('woocommerce', array(
+		'thumbnail_image_width' => 255,
+		'single_image_width' => 255,
+		'product_grid' => array(
+			'default_row' => 10,
+			'min_row' => 5,
+			'max_row' => 10,
+			'default_columns' => 2,
+			'min_columns' => 1,
+			'max_columns' => 4,
+
+		)
+
+	));
+	add_theme_support('wc-product-gallery-zoom');
+	add_theme_support('wc-product-gallery-lightbox');
+	add_theme_support('wc-product-gallery-slider');
+
+	if ( ! isset( $content_width ) ) {
+	$content_width = 600;
 }
-add_action('after_setup_theme', 'petoBear_lab__config', 0);
+add_action('after_setup_theme', 'petoBear_lab_config', 0);
