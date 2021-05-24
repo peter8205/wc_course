@@ -21,7 +21,6 @@ get_header( 'shop' );
 ?>
 <div class="container">
 	<div class="row">
-		<div class="col-lg-3 col-md-4 order-2 order-md-1">
 			<?php
 
 				/**
@@ -32,8 +31,9 @@ get_header( 'shop' );
 				do_action( 'woocommerce_sidebar' );
 			?>	
 		</div>
-		<div class="col-lg-9 col-md-8 order-1 order-md-2">
 <?php
+
+
 
 /**
  * Hook: woocommerce_before_main_content.
