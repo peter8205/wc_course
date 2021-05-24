@@ -334,3 +334,8 @@ Tags: e-commerce, custom-menu, custom-logo, featured-images, footer-widgets, the
     background-color: #D2335B;
     color: #fff;
 }
+
+.main-menu .dropdown:hover>.dropdown-menu, 
+.main-menu .dropup:hover>.dropdown-menu  {
+  display: block;
+}
