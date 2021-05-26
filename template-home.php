@@ -1,12 +1,14 @@
 <?php 
+
 /*
 Template Name: Home Page
 */
-get_header();
-?>
+
+get_header(); ?>
+
 		<div class="content-area">
 			<main>
-		<section class="slider">
+				<section class="slider">
 					<div class="flexslider">
 					  <ul class="slides">
 						<?php  
@@ -25,15 +27,27 @@ get_header();
 						);
 
 						$slider_loop = new WP_Query( $args );
-
+						$j = 1;
 						if( $slider_loop->have_posts() ):
 							while( $slider_loop->have_posts() ):
 								$slider_loop->the_post();
 						?>
-					    <li>
-					      <?php the_post_thumbnail( 'petoBear-lab-slider', array( 'class' => 'img-fluid' ) ); ?>
-					    </li>
+						    <li>
+						      <?php the_post_thumbnail( 'petoBear-lab-slider', array( 'class' => 'img-fluid' ) ); ?>
+						      <div class="container">
+						      	<div class="slider-details-container">
+						      		<div class="slider-title">
+						      			<h1><?php the_title(); ?></h1>
+						      		</div>
+						      		<div class="slider-description">
+						      			<div class="subtitle"><?php the_content(); ?></div>
+						      			<a class="link" href="<?php echo $slider_button_url[$j]; ?>"><?php echo $slider_button_text[$j]; ?></a>
+						      		</div>
+						      	</div>
+						      </div>
+						    </li>
 						<?php 
+						$j++;
 						endwhile;
 						wp_reset_postdata();
 						endif;
@@ -79,7 +93,6 @@ get_header();
 						</div>
 					</div>
 				</section>
-
 			</main>
 		</div>
 <?php get_footer(); ?>
