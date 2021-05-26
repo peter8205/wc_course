@@ -19,10 +19,8 @@
 
 	<div id="page" class="site">
 		<header>
-			<section class="search">
-				<div class="container">
-					Search
-				</div>
+				<section class="search">
+				<div class="container"><?php get_search_form(); ?></div>
 			</section>
 			<section class="top-bar">
 				<div class="container">
