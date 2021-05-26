@@ -72,6 +72,12 @@ add_theme_support('woocommerce', array(
 			'flex_width'	=> true,
 		) );
 
+	add_image_size( 'petoBear-lab-slider', 1920, 800, array( 'center', 'center' ) );
+
+		if ( ! isset( $content_width ) ) {
+			$content_width = 600;
+		}
+
 
 	if ( ! isset( $content_width ) ) {
 	$content_width = 600;
