@@ -75,3 +75,5 @@ add_theme_support('woocommerce', array(
 add_action( 'after_setup_theme', 'petoBear_lab_config', 0 );
 //vystrihni vsetko co tu bolo ctrl + s nahrad riadkom dole 
 require get_template_directory() . '/inc/wc-modifications.php';
+
+require_once get_template_directory() . '/inc/customizer.php';
